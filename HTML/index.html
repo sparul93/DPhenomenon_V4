@@ -43,7 +43,7 @@ window.onclick = function(event) {
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h4 class="modal-title" id="myModalLabel"> &nbsp; <small><span class="label label-success">Available</span> &nbsp; <span class="label label-danger">Not Available</span></small></h4>
+						<h4 class="modal-title" id="myModalLabel"> &nbsp; <small><span class="label label-danger">Not Available</span> &nbsp; </small></h4>
 					</div>
 					<!-- form for events ticket booking -->
 					<form>
@@ -75,7 +75,12 @@ window.onclick = function(event) {
 						<div class="modal-footer">
 							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 							<!-- link to payment gatway here -->
-							<button type="button" class="btn btn-primary">Book Now</button>
+							<button type="button" onclick="myunction()" class="btn btn-primary">Book Now</button>
+							<script>
+function myunction() {
+  alert("Sorry! These events are not available right now.");
+}
+</script>
 						</div>
 					</form>
 				</div>
